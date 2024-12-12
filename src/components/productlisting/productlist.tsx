@@ -10,7 +10,8 @@ const Productlisting = () => {
   return (
     <>
      <section className='w-full'>
-         <div className='flex'>
+         <div className='flex  xsm:flex-col xs:flex-col sm:flex-col md:flex-row
+         xsm:hidden xs:hidden sm:hidden md:flex'>
           <Image src={"/chair.png"} alt="product" width={721} height={759}></Image>
           <div className='my-[51px] ml-[62px] mr-[55px]'>
              <h1 className='mb-[13px] text-2xl'>The Dandy Chair</h1>
@@ -57,8 +58,11 @@ const Productlisting = () => {
          </div>
 
          <div className='w-full'>
-         <h1 className='p-[48px] text-3xl'>You might also like</h1>
-                            <div className='w-full grid grid-cols-4 gap-[20px] '>
+         <h1 className='p-[48px] 
+         text-3xl'>You might also like</h1>
+                            <div className='w-full grid 
+                            xsm:grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 
+                            gap-[20px] '>
                               
                         {/* child */}
                      {Productpic.map((item,index)=>{
@@ -73,8 +77,12 @@ const Productlisting = () => {
                      </div>
          </div>
          <div className=' w-[170px] h-[56px] mx-[635px] bg-[#c4baba]'> <button className='w-[170px] h-[56px] '>View  collection</button> </div>
-         <h1 className='text-center  pt-[60px] text-2xl'>What makes our brand different</h1>
-         <div className='grid grid-cols-4 gap-[18px] mb-[82px]  w-full '>
+         <h1 className='text-center  pt-[60px] xsm:pl-[25px] pr-[92px] md:p-[48px] text-2xl'>What makes our brand different</h1>
+         <div className='grid 
+                            xsm:grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 
+                            gap-[18px] 
+                            mb-[82px]  xsm:mb-[20px] md:mb-[82px]
+                            w-full '>
                {Box.map((item,index)=>{
                               return(
                                 <div className='w-[305px] h-[244px] p-[48px]'  key={index}>
@@ -88,7 +96,10 @@ const Productlisting = () => {
 
 
                             
-                    <div className='pt-[52px] pl-[93px] pr-[74px] pb-[65px] '>
+                    <div className='pt-[52px] 
+                    pl-[93px] xsm:pl-[20px] md:pl-[93px]
+                    pr-[74px] xsm:pr-[20px] md:pr-[74px]
+                     pb-[65px] xsm:pb-[20px] md:pb-[65px]'>
                        <Image src={"/Container (1).png"} alt="delivery" width={1440} height={704}></Image>
                     </div>
 

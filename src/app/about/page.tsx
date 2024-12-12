@@ -16,7 +16,9 @@ function Productpage() {
     setIsOpen(!isOpen);
   };
 
-  return (  <>
+  return (  
+  <>
+  <section className='w-full xsm:overflow-x-hidden md:w-full'>
     <div className="w-full h-12 bg-[#2A254B] text-white flex items-center justify-between px-[136px]">
           {/* content-1 */}
           <div className="flex justify-between text-center gap-2  ml-[309px]">
@@ -26,10 +28,7 @@ function Productpage() {
             </Link></div>
           </div>
             </div>
-          
-       
-          
-    <nav className="bg-white p-4 shadow-md">
+      <nav className="bg-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-black text-xl font-bold">
@@ -180,10 +179,19 @@ Get in touch          </button>
       
       </section>
 
-      <h1 className='mt-[80px] ml-[529px] mr-[545px] mb-[36px] text-[18px] '>What makes our brand different</h1>
+      <h1 className='mt-[80px]
+       ml-[529px] xsm:ml-[48px] md:ml-[120px] lg:ml-[529px]
+        mr-[545px] xsm:mr-[10px] md:mr-[10px] lg:mr-[529px]
+        mb-[36px]
+        text-[18px] '>What makes our brand different</h1>
            
            {/* four box */}
-           <div className='grid grid-cols-4 gap-[18px] mb-[82px]  w-full '>
+           <div className='grid 
+           grid-cols-4 xsm:grid-cols-1 xs:grid-cols-2 md:grid-cols-4
+           gap-[18px] xsm:gap-[5px]  md:gap-[18px]
+          mb-[82px] xsm:mb-[12px] xs:mb-[20px] md:mb-[82px]
+           w-full 
+           '>
           {Box.map((item,index)=>{
                          return(
                            <div className='w-[305px] h-[244px] p-[48px]'  key={index}>
@@ -195,13 +203,18 @@ Get in touch          </button>
                        })}
                        </div>
 
-                       <div className='pt-[52px] pl-[93px] pr-[74px] pb-[65px] '>
+                       <div className='
+                       pt-[52px] xsm:pt-[10px] md:pt-[32px] lg:pt-[52px]
+                        pl-[93px] xsm:pl-[10px] md:pl-[32px] lg:pl-[52px]
+                        pr-[74px] xsm:pr-[10px] md:pr-[32px] lg:pr-[52px]
+                        pb-[65px] xsm:pb-[10px] md:pb-[32px] lg:pb-[52px]'>
                        <Image src={"/Container (1).png"} alt="delivery" width={1440} height={704}></Image>
                     </div>
 
 
 
       <Footer/>
+      </section>
     </>
   );
 };

@@ -6,8 +6,10 @@ import React from 'react'
 const Product = () => {
   return (
     <>
-       <Navbarproduct/>
-       <Productlisting/>
+    <section  className='w-full xsm:overflow-x-hidden md:w-full'>
+    <Navbarproduct/>
+    <Productlisting/>
+    </section>
     </>
   )
 }

@@ -5,7 +5,7 @@ import React from 'react'
 const Home2 = () => {
   return (
     <>
-     <section className='w-full'>
+     <section className='w-full  xsm:overflow-x-hidden md:w-full'>
         <Navbar/>
         <Herosection/>
     </section> 
