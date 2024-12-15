@@ -5,16 +5,16 @@ import { Label } from '@/components/ui/label';
 import Image from 'next/image';
 import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
+import Link from 'next/link';
+import { Productpic2 } from '@/constant/product2';
 
 export default function Productv1() {
   return (
     <>
   <Navbar/>
-   
-      
 
-    
-<div className="flex mt-[20px]">
+
+    <div className="flex mt-[20px]">
   {/* Vertical Navbar */}
   <aside className="w-[385px] bg-white p-12 ">
     <div className="flex flex-col gap-12">
@@ -121,33 +121,24 @@ export default function Productv1() {
 
   {/* Cards Section */}
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 ml-6">
-    {[
-      { title: 'The Dandy chair', price: '£250', img: '/Photo1.png' },
-      { title: 'Rustic Vase Set', price: '£250', img: '/photo2.png' },
-      { title: 'The Silky Vase', price: '£250', img: '/stool.png' },
-      { title: 'The Silky Vase', price: '£250', img: '/photo3.png' },
-      { title: 'The Silky Vase', price: '£250', img: '/photo4.png' },
-      { title: 'The Silky Vase', price: '£250', img: '/Parent (1).png' },
-      { title: 'The Silky Vase', price: '£250', img: '/Parent (2).png' },
-      { title: 'The Silky Vase', price: '£250', img: '/Parent (3).png' },
-      { title: 'The Silky Vase', price: '£250', img: '/Photo (4).png' },
-    ].map((product) => (
-      <div
-        key={product.title}
-        className="bg-white p-4 rounded-lg shadow transform transition-transform hover:scale-105"
-      >
-        <Image
-          src={product.img}
-          alt={product.title}
-          width={305} 
-          height={375} 
-          className="w-full h-[375px] object-cover rounded-md"
-        />
-        <h4 className="font-bold mt-4 mb-2">{product.title}</h4>
-        <p className="text-gray-600">{product.price}</p>
-      </div>
+    {Productpic2.map((product3,index) => (
+   <Link href={ `/productlist/${product3.id}`} key={index}><div 
+    className="bg-white p-4 rounded-lg shadow transform transition-transform hover:scale-105"
+    key={index}>
+    <Image
+      src={product3.src}
+      alt="Product"
+      width={305} 
+      height={375} 
+      className="w-full h-[375px] object-cover rounded-md"
+    />
+    <h4 className="font-bold mt-4 mb-2">{product3.heading}</h4>
+    <p className="text-gray-600">{product3.price}</p>
+  </div></Link>
     ))}
   </div>
+      
+      
 </div>
 <div className="text-center mt-11 mb-[36px]">
           <button className="bg-gray-500 hover:bg-gray-300 text-black py-3 px-8 sm:py-4 sm:px-12 text-sm sm:text-base rounded shadow-md transition-colors">

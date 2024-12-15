@@ -3,19 +3,24 @@ import Image from 'next/image'
 import { Productpic } from '@/constant/product'
 import { Box } from '@/constant/boxdiv'
 import Footer from '../footer'
+import { Productpic2 } from '@/constant/product2'
 
 
 
-const Productlisting = () => {
+const Productlisting = (props:{cardid:number}) => {
+  const data=   Productpic2.find((item)=>{
+    return(item.id==props.cardid)
+})
   return (
     <>
      <section className='w-full'>
-         <div className='flex  xsm:flex-col xs:flex-col sm:flex-col md:flex-row
+         <div className='flex  
+         xsm:flex-col xs:flex-col sm:flex-col md:flex-row
          xsm:hidden xs:hidden sm:hidden md:flex'>
-          <Image src={"/chair.png"} alt="product" width={721} height={759}></Image>
+          <Image src={data?.src|| "/Photo1.png"} alt="product" width={721} height={759} className='w-[721px] h-[759px] p-[48px]'></Image>
           <div className='my-[51px] ml-[62px] mr-[55px]'>
-             <h1 className='mb-[13px] text-2xl'>The Dandy Chair</h1>
-             <p className='mb-[54px]'>£250</p>
+             <h1 className='mb-[13px] text-2xl'>{data?.heading}</h1>
+             <p className='mb-[54px]'>{data?.price}</p>
              <h1>Description</h1>
             <p className='mb-[20px]'>A timeless design, with premium materials features as one of our most <br /> popular and iconic pieces. The dandy chair is perfect for any stylish <br />living space with beech legs and lambskin leather upholstery.</p>
               <ul className='mb-[30px]'>
