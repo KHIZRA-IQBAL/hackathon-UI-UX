@@ -53,7 +53,7 @@ const Navbar = () => {
       <Link href={"/home2"}> <li className='py-2 px-4 border-b'>Ceramics</li></Link>
       <Link href={"/about"}><li className='py-2 px-4 border-b'>Tables</li></Link>
       <Link href={"/productlist2"}> <li className='py-2 px-4 border-b'>Chairs</li></Link>
-      <Link href={"/productlist"}> <li className='py-2 px-4 border-b'>Crockery</li></Link>
+      <Link href={"/productlist2"}> <li className='py-2 px-4 border-b'>Crockery</li></Link>
       <Link href={"/shoppingbasket"}><li className='py-2 px-4 border-b'>Tableware</li></Link>
       <Link href={"/"}><li className='py-2 px-4 border-b'>Cutlery</li></Link>
     </ul>
