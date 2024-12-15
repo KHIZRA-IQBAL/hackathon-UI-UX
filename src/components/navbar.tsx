@@ -40,7 +40,7 @@ const Navbar = () => {
       <Link href={"/home2"}> <li>Ceramics</li></Link>
       <Link href={"/about"}><li>Tables</li></Link>
       <Link href={"/productlist2"}> <li>Chairs</li></Link>
-      <Link href={"/productlist"}> <li>Crockery</li></Link>
+      <Link href={"/productlist2"}> <li>Crockery</li></Link>
       <Link href={"/shoppingbasket"}><li>Tableware</li></Link>
       <Link href={"/"}><li>Cutlery</li></Link>
     </ul>
