@@ -28,7 +28,7 @@ export const Productpic2 = [
     {
         id:5,
         src:"/photo4.png",
-        heading:"The Dandy chair",
+        heading:"The lucy Lamp",
         price:"£250"
      
      },
@@ -51,10 +51,31 @@ export const Productpic2 = [
          heading:"The Lucy Lamp",
          price:"£399"
      },
-     {  
+     {
         id:9,
-        src:"/Photo4.png",
-        heading:"The Lucy Lamp",
-        price:"£169"
-    },
+        src:"/Photo1.png",
+        heading:"The Dandy chair",
+        price:"£250"
+     
+     },
+     {
+         id:10,
+         src:"/photo2.png",
+         heading:"Rustic Vase Set",
+         price:"£155"
+       
+     }, 
+      {
+         id:11,
+         src:"/stool.png",
+         heading:"The Silky Vase",
+         price:"£125"
+      },
+     {  
+         id:12,
+         src:"/photo3.png",
+         heading:"The Lucy Lamp",
+         price:"£399"
+     },
+    
 ]
