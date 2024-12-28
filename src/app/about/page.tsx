@@ -62,11 +62,17 @@ function Productpage() {
 
       </div>
     </nav>
-    <div className='flex items-center justify-center gap-[16px] mt-[20px] '>
-          <nav className="  hidden md:flex items-center gap-8">
+    <div className='flex items-center justify-center gap-[16px] xsm:ml-[10px] md:ml-[0px] mt-[20px] '>
+          <nav className="xsm:flex md:flex items-center gap-8">
+                 <Link
+                    href={"/productlist2"}
+                    className="text-[16px] leading-[24px] relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-black "
+                  >
+                    All Products
+                  </Link>
                   <Link
                     href={"/"}
-                    className="text-[16px] leading-[24px] relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-black "
+                    className="text-[16px] leading-[24px] hover:text-gray-600"
                   >
                     Plant Pots
                   </Link>
@@ -112,27 +118,31 @@ function Productpage() {
                   </nav>
                   </div>
 
-                  <div>
-                    <div className="flex flex-col items-center justify-center mt-[80px] font-serif text-[#2A254B] width-[704px]">
-                        <h1 className='text-[50px] leading-[70px]'>A brand built on the love of craftmanship,
+                  <div className='flex xsm:flex-col md:flex-row '>
+                    <div className="flex flex-col items-center justify-center my-[80px] font-serif text-[#2A254B] width-[704px] 
+                   xsm:ml-[20px] md:ml-[128px]
+                   xsm:mr-[10px] md:mr-[160px]">
+                        <h1 className='text-[40px] leading-[70px]'>A brand built on the love 
+                          of craftmanship,
                         <br/> quality and outstanding customer service</h1>
-
+                        
                     </div>
+                    <button className='xsm:w-[300px] md:w-[170px]  h-[56px] xsm:mt-[40px] md:mt-[95px] xsm:mr-[20px] ml-[20px] md:mr-[128px] xsm:mb-[10px] md:mb-[133px] bg-[#c4baba]'>View  Products</button>
                   </div>
 
-         <section className=" mt-[60px] grid grid-cols-1 md:grid-cols-2 gap-8 p-8 ">
+         <section className="xsm:mt-[10px] md:mt-[60px] grid grid-cols-1 md:grid-cols-2 gap-8 xsm:p-4 md:p-8 ">
         <div className="flex flex-col justify-center bg-[#2A254B]">
-          <h2 className="text-[24px] text-white leading-[33.6px] md:text-5xl font-sans mb-4">
-          From a studio in London to a global brand with
-          over 400 outlets
+          <h2 className="text-[24px] text-white leading-[33.6px] md:text-[30px] font-sans xsm:mt-[20px]
+          md:mt-[64px] xsm:ml-[10px] md:ml-[64px] xsm:mr-[10px] md:mr-[187px] mb-[12px]">
+          It started with a small idea
           </h2>
-          <p className="mb-6 text-white text-[16px] leading-[21.5px] mt-[25px]">
-          When we started Avion, the idea was simple. Make high quality furniture affordable and available 
-          for the mass market. <br/><br/><br/>
-          Handmade, and lovingly crafted furniture and homeware is what we live, breathe and design 
-          so our Chelsea boutique become the hotbed for the London interior design community.
+          <p className="xsm:mb-[80px] md:mb-[145px] text-white text-[16px] leading-[21.5px] 
+          mt-[25px] 
+          xsm:ml-[10px] md:ml-[64px] ">
+          A global brand with local beginnings, our story begain in a small studio in South London in early 2014
           </p>
-          
+          <button className='xsm:w-[300px] md:w-[170px]  h-[56px] xsm:mr-[20px] md:mr-[0px]
+         xsm:mt-[10px] md:mt-[41px] bg-[#c4baba] xsm:ml-[10px] md:ml-[64px] xsm:mb-[10px]  md:mb-[0px]'>View  collection</button>
         </div>
         <div>
           <Image
@@ -142,14 +152,10 @@ function Productpage() {
             className="w-full h-auto object-cover rounded-lg"/>
           
         </div>
-        <div className="text-left mt-10">
-          <button className="bg-[#F9F9F9] hover:bg-gray-300 text-black py-3 px-8 sm:py-4 sm:px-12 text-sm sm:text-base rounded-lg shadow-md transition-colors">
-            Get in touch
-          </button>
-        </div>
+       
       </section>
 
-      <section className=" mt-[60px] grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+      <section className="xsm:mt[0px] md:mt-[60px] grid grid-cols-1 md:grid-cols-2 xsm:gap-1 md:gap-8 xsm:p-2 md:p-8">
       <div>
           <Image
             src="/overall.png"
@@ -171,9 +177,9 @@ function Productpage() {
           Handmade, and lovingly crafted furniture and homeware is what we live, breathe and design 
           so our Chelsea boutique become the hotbed for the London interior design community.
           </p>
-          <div className="text-left mt-[176px]">
+          <div className="text-left xsm:mt-[30px] md:mt-[176px] xsm:ml-[10px] md:ml-[64px]">
           <button className="bg-[#F9F9F9] hover:bg-gray-300 text-black py-3 px-8 sm:py-4 sm:px-12 text-sm sm:text-base rounded shadow-md transition-colors">
-Get in touch          </button>
+           Get in touch</button>
         </div>
         </div>
       

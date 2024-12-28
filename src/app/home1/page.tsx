@@ -14,7 +14,14 @@ const Home1 = () => {
          <Navbar/>
          <Hero/>
               {/* four box */}
+              <div className='w-full'>
+              <h1 className='mt-[80px] xsm:mt-[50px] md:mt-[80px]
+                 ml-[529px]  xsm:ml-[50px] md:ml-[529px]
+                 mr-[545px]   xsm:mr-[50px] md:mr-[529px]
+                mb-[36px] 
+                text-[18px] '>What makes our brand different</h1>
               <div className='grid grid-cols-4 gap-[18px] mb-[82px] xsm:grid-cols-1 w-full xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4'>
+           
                {Box.map((item,index)=>{
                               return(
                                 <div className='w-[305px] h-[244px] p-[48px]'  key={index}>
@@ -24,6 +31,8 @@ const Home1 = () => {
                                 </div>
                               )
                             })}
+                            </div>
+
                             </div>
                                  <h1 className='p-[48px] text-3xl'>New ceramics</h1>
                             <div className='w-full grid grid-cols-4 gap-[20px] xsm:grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4'>
