@@ -1,12 +1,14 @@
+// src\app\home1\page.tsx
 import Footer from '@/components/footer'
 import Hero from '@/components/hero'
 import Navbar from '@/components/navbar'
 import { Box } from "@/constant/boxdiv"
 import { Productpic } from '@/constant/product'
+// import { fetchData } from '@/script/migration'
 import Image from 'next/image'
 import React from 'react'
 
-const Home1 = () => {
+const Home1 = async() => {
   return (
     <>
       <section className='w-full 

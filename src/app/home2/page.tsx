@@ -1,3 +1,4 @@
+// src\app\home2\page.tsx
 import Herosection from '@/components/home2/herosection'
 import Navbar from '@/components/navbar'
 import React from 'react'

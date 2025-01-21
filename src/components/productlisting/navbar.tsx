@@ -1,3 +1,4 @@
+// src\components\productlisting\navbar.tsx
 import React from 'react'
 import { CiSearch } from 'react-icons/ci';
 import { FiShoppingCart } from 'react-icons/fi';

@@ -1,3 +1,4 @@
+// src\components\home2\herosection.tsx
 import React from 'react'
 import Image from 'next/image'
 import { Box } from '@/constant/boxdiv'
